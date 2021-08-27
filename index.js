@@ -94,7 +94,7 @@ function html() {
             <span class="navbar-brand mb-0 h1 w-100 text-center">Team Member Profile</span>
         </nav>
         <div class="card-group">`;
-    fs.writeFile("//Users/abdallakhalil/Desktop/homework/hw8/post nodeindex cmd/members.html", html, function (err) {
+    fs.writeFile("//Users/abdallakhalil/Desktop/homework/hw8/post-nodeindex/members.html", html, function (err) {
         if (err) {
             console.log(err);
         }
@@ -150,7 +150,7 @@ function addHTML(member) {
         </div>`;
         }
         console.log("adding team member(s)");
-        fs.appendFile("/Users/abdallakhalil/Desktop/homework/hw8/post nodeindex cmd/members.html", data, function (err) {
+        fs.appendFile("/Users/abdallakhalil/Desktop/homework/hw8/post-nodeindex/members.html", data, function (err) {
             if (err) {
                 return reject(err);
             };
@@ -166,12 +166,12 @@ function endHTML() {
     </body>
     </html>`;
 
-    fs.appendFile("/Users/abdallakhalil/Desktop/homework/hw8/post nodeindex cmd/members.html", html, function (err) {
+    fs.appendFile("/Users/abdallakhalil/Desktop/homework/hw8/post-nodeindex/members.html", html, function (err) {
         if(err) {
             console.log(err);
         };
     });
-    console.log("HTML is in dist folder.");
+    console.log("HTML is in post-nodeindex folder.");
 };
 
 init();
